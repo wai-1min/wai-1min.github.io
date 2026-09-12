@@ -1,120 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="AJ Surya — Independent Artist & Songwriter">
-<title>AJ Surya — Official Artist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJ Surya — Artist</title>
+<meta name="description" content="Official website of AJ Surya, independent artist and songwriter.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#07090c;color:#f5f1e8;font-family:'DM Sans',sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.nav{position:fixed;z-index:20;top:0;left:0;right:0;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#07090ce8,transparent);backdrop-filter:blur(5px)}
-.logo{font-family:cursive;font-size:28px;font-style:italic}.logo span{color:#d7ad57}
-.navlinks{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:2px}
-.navlinks a:hover{color:#d7ad57}
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050608 0%,#050608c9 35%,#05060845 70%,#050608b8 100%),linear-gradient(0deg,#07090c 0%,transparent 35%);z-index:1}
-.heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:saturate(.8) contrast(1.05)}
-.hero-content{position:relative;z-index:2;width:min(680px,88%);margin-left:8%;padding-top:60px}
-.kicker{color:#d7ad57;letter-spacing:5px;font-size:11px;font-weight:700;margin-bottom:16px}
-h1{font-family:'Playfair Display',serif;font-size:clamp(60px,10vw,130px);line-height:.9;letter-spacing:-4px}
-.script{font-family:cursive;font-size:clamp(30px,4vw,48px);font-style:italic;color:#e8c878;margin:22px 0}
-.hero p{max-width:520px;color:#c9c7c2;font-size:17px}
-.btns{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
-.btn{border:1px solid #d7ad57;padding:13px 22px;border-radius:30px;font-size:12px;letter-spacing:2px;text-transform:uppercase}
-.btn.primary{background:#d7ad57;color:#111;border-color:#d7ad57;font-weight:700}
-section{padding:100px 7%}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}
-.eyebrow{color:#d7ad57;text-transform:uppercase;letter-spacing:4px;font-size:11px;font-weight:700}
-h2{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,64px);line-height:1.05}
-.music{background:linear-gradient(180deg,#07090c,#0d1116)}
-.releases{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.card{background:#10151b;border:1px solid #242b33;border-radius:18px;overflow:hidden;transition:.3s}
-.card:hover{transform:translateY(-5px);border-color:#6f5b32}
-.card-art{height:330px;overflow:hidden}
-.card-art img{width:100%;height:100%;object-fit:cover}
-.card-body{padding:22px}.card-body h3{font-family:'Playfair Display',serif;font-size:26px}.meta{color:#999;font-size:13px;margin:4px 0 18px}
-.about{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
-.about-img{width:100%;border-radius:20px;max-height:650px;object-fit:cover;object-position:top}
-.about-copy p{color:#b9bbc0;font-size:17px;margin:18px 0}
-.quote{font-family:cursive;font-size:28px;color:#d7ad57;margin-top:25px}
-.details{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
-.detail{padding:18px;border:1px solid #252b32;border-radius:14px;background:#0c1015}
-.detail b{display:block;font-size:11px;letter-spacing:2px;color:#8e939a;text-transform:uppercase}.detail span{font-size:15px}
-.contact{position:relative;text-align:center;overflow:hidden;background:#0b0e12}
-.contact:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,#40351f33,transparent 55%)}
-.contact>*{position:relative}
-.contact p{color:#aeb1b6;max-width:600px;margin:18px auto}
-footer{padding:35px 7%;border-top:1px solid #20252b;display:flex;justify-content:space-between;gap:20px;color:#777;font-size:12px}
-.social{display:flex;gap:18px;color:#ccc}
-@media(max-width:800px){.navlinks{display:none}.hero-content{margin-left:7%}.heroimg{object-position:58% top}.releases,.about{grid-template-columns:1fr}.about{gap:35px}.details{grid-template-columns:1fr 1fr}section{padding:75px 6%}.card-art{height:270px}footer{flex-direction:column}}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0d0d0f;color:#fff}
+.wrap{max-width:850px;margin:auto;padding:60px 22px}
+.hero{text-align:center;padding:55px 20px}
+.badge{display:inline-block;padding:8px 14px;border:1px solid #444;border-radius:999px;color:#ccc;font-size:13px}
+h1{font-size:56px;margin:22px 0 8px} .role{color:#bbb;font-size:18px}
+.card{background:#17171a;border:1px solid #29292d;border-radius:22px;padding:28px;margin-top:24px}
+h2{margin-top:0} a{color:#fff;text-decoration:none}
+.button{display:inline-block;background:#fff;color:#111;padding:13px 19px;border-radius:999px;font-weight:700;margin:7px 5px 0 0}
+.small{color:#aaa;font-size:14px;line-height:1.7}
+footer{text-align:center;color:#777;padding:35px 0;font-size:13px}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <a class="logo" href="#home">AJ <span>Surya</span></a>
-  <div class="navlinks"><a href="#home">Home</a><a href="#music">Music</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-</nav>
+<main class="wrap">
+<section class="hero">
+  <span class="badge">OFFICIAL ARTIST WEBSITE</span>
+  <h1>AJ Surya</h1>
+  <div class="role">Independent Artist • Songwriter</div>
+</section>
 
-<header class="hero" id="home">
-  <img class="heroimg" src="aj-surya-hero.jpg" alt="AJ Surya">
-  <div class="hero-content">
-    <div class="kicker">INDEPENDENT ARTIST • SONGWRITER</div>
-    <h1>AJ<br>Surya</h1>
-    <div class="script">Music speaks when words fall short.</div>
-    <p>Welcome to the official home of AJ Surya — original songs, stories and sounds across Tamil, Hindi and English.</p>
-    <div class="btns">
-      <a class="btn primary" href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank">Listen on Spotify</a>
-      <a class="btn" href="#music">Explore Music</a>
-    </div>
-  </div>
-</header>
+<section class="card">
+  <h2>About AJ Surya</h2>
+  <p class="small">AJ Surya is an independent artist and songwriter creating original music across Tamil, Hindi and English influences.</p>
+</section>
 
-<section class="music" id="music">
-  <div class="section-head">
-    <div><div class="eyebrow">Featured music</div><h2>Latest Releases</h2></div>
-    <div style="color:#888;max-width:320px">A mix of emotions, stories and moments — made to be heard.</div>
-  </div>
-  <div class="releases">
-    <article class="card">
-      <div class="card-art"><img src="aj-surya-hero.jpg" alt="Nee Dhaane"></div>
-      <div class="card-body"><h3>நீ தானே (Nee Dhaane)</h3><div class="meta">Romantic Indie-Pop • Tamil × Hindi × English</div>
-      <a class="btn primary" href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank">Play on Spotify</a></div>
-    </article>
-    <article class="card">
-      <div class="card-art" style="display:grid;place-items:center;background:linear-gradient(135deg,#141927,#06070a);">
-        <div style="text-align:center;padding:30px"><div class="eyebrow">AJ Surya</div><div style="font-family:'Playfair Display';font-size:42px;margin:15px 0">Dosti Thi<br>Ya Pyaar Tha :)</div><div style="color:#aaa">Emotional Pop • Hindi × English</div></div>
+<section class="card">
+  <h2>Music</h2>
+  <p><strong>Latest releases</strong></p>
+  <div id="releases"><p class="small">Loading latest releases…</p></div>
+  <a class="button" href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank" rel="noopener">Listen on Spotify</a>
+</section>
+
+<script>
+async function loadReleases() {
+  const box = document.getElementById("releases");
+  try {
+    const res = await fetch("releases.json?v=" + Date.now(), {cache: "no-store"});
+    if (!res.ok) throw new Error("releases.json not found");
+    const releases = await res.json();
+
+    if (!releases.length) {
+      box.innerHTML = '<p class="small">New releases will appear here automatically.</p>';
+      return;
+    }
+
+    box.innerHTML = releases.slice(0, 8).map(r => `
+      <div style="display:flex;gap:14px;align-items:center;margin:14px 0;padding:10px 0;border-bottom:1px solid #29292d">
+        <img src="${r.image}" alt="" width="72" height="72"
+             style="width:72px;height:72px;object-fit:cover;border-radius:12px"
+             loading="lazy">
+        <div style="flex:1">
+          <div style="font-weight:700">${escapeHtml(r.name)}</div>
+          <div class="small">${escapeHtml(r.release_date)}</div>
+          <a class="button" style="font-size:13px;padding:9px 14px"
+             href="${r.url}" target="_blank" rel="noopener">Listen on Spotify</a>
+        </div>
       </div>
-      <div class="card-body"><h3>Dosti Thi Ya Pyaar Tha :)</h3><div class="meta">Emotional Pop • Hindi × English</div>
-      <a class="btn primary" href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank">Listen now</a></div>
-    </article>
-  </div>
+    `).join("");
+  } catch (e) {
+    box.innerHTML = '<p class="small">Latest releases are being updated. Please check Spotify.</p>';
+  }
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[c]));
+}
+loadReleases();
+</script>
+
+<section class="card">
+  <h2>Contact</h2>
+  <p class="small">For music-related enquiries:</p>
+  <a class="button" href="mailto:a.jeyasurya23@gmail.com">Email AJ Surya</a>
+  <p class="small">a.jeyasurya23@gmail.com</p>
 </section>
 
-<section class="about" id="about">
-  <img class="about-img" src="aj-surya-character-sheet.png" alt="AJ Surya character reference">
-  <div class="about-copy">
-    <div class="eyebrow">About the artist</div><h2>Same soul.<br>Different stories.</h2>
-    <p>I'm AJ Surya — an independent artist and songwriter creating music from emotion, imagination and everyday moments.</p>
-    <p>My sound moves between Tamil, Hindi and English, blending romantic melodies, pop energy and cinematic storytelling.</p>
-    <div class="quote">Create. Feel. Repeat.</div>
-    <div class="details">
-      <div class="detail"><b>Artist</b><span>AJ Surya</span></div>
-      <div class="detail"><b>Sound</b><span>Pop / Indie / Romantic</span></div>
-      <div class="detail"><b>Languages</b><span>Tamil / Hindi / English</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="eyebrow">Stay connected</div><h2>Let's make something memorable.</h2>
-  <p>For music, collaborations or artist enquiries, reach out directly.</p>
-  <div class="btns" style="justify-content:center"><a class="btn primary" href="mailto:ajsurya23@gmail.com">Email AJ Surya</a><a class="btn" href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank">Spotify Artist</a></div>
-</section>
-
-<footer><div><span style="font-family:cursive;font-size:24px;color:#eee">AJ Surya</span> &nbsp; © 2026 AJ Surya</div><div class="social"><a href="https://open.spotify.com/artist/2zpVycqK9i1EvL76vPThbJ" target="_blank">Spotify</a><a href="#home">Back to top ↑</a></div></footer>
+<footer>© 2026 AJ Surya. All rights reserved.</footer>
+</main>
 </body>
 </html>
